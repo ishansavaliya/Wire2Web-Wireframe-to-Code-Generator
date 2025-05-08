@@ -1,36 +1,202 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wire2Web - AI-Powered Wireframe to Code Converter
 
-## Getting Started
+**Description:**  
+Wire2Web is an AI-driven platform that converts wireframe designs into functional code. It allows designers and developers to quickly transform mockups and UI sketches into React components with Tailwind CSS. With an intuitive interface and powerful AI capabilities, Wire2Web streamlines the development process by generating high-quality, responsive code that matches your wireframe design.
 
-First, run the development server:
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Environment Variables](#environment-variables)
+- [Project Structure](#project-structure)
+- [Deployment](#deployment)
+
+---
+
+## Features
+
+### 🔹 1. Wireframe to Code Conversion
+
+- **Upload UI wireframes** as images directly to the platform
+- **AI-powered code generation** that converts wireframes to React & Tailwind CSS code
+- **Multiple AI models** support including Google Gemini, Meta Llama, and Deepseek
+- **Real-time code preview** with Sandpack integration
+- **Customizable descriptions** to guide the AI toward your specific requirements
+- Support for **responsive designs** that work across different screen sizes
+- **Modern UI components** generation with proper styling
+
+### 🔹 2. Design Management
+
+- **Save and organize** your wireframe designs
+- **View previously converted designs** in an organized gallery
+- **Regenerate code** for existing designs when needed
+- **Share generated code** with team members
+
+### 🔹 3. Code Editing & Preview
+
+- **Interactive code editor** for viewing and modifying generated code
+- **Live preview** of generated UI components
+- **Dependency management** for including necessary packages
+- **Syntax highlighting** for better code readability
+- **Export functionality** to use code in your projects
+
+### 🔹 4. User Management
+
+- **Firebase authentication** for secure user accounts
+- **Credit system** for tracking usage
+- **User dashboard** for managing designs and credits
+- **Profile management** with avatar support
+
+---
+
+## Technologies Used
+
+- **Frontend:**
+
+  - Next.js 15
+  - React 18
+  - Tailwind CSS
+  - ShadCN UI components
+  - Lucide React for icons
+
+- **Backend:**
+
+  - Next.js API routes
+  - Drizzle ORM
+  - NeonDB (PostgreSQL)
+  - Firebase Authentication
+  - Firebase Storage
+
+- **AI Integration:**
+
+  - OpenAI APIs
+  - Google Gemini
+  - Meta Llama
+  - Deepseek
+
+- **Other Tools:**
+  - TypeScript
+  - Axios for HTTP requests
+  - Sonner for toast notifications
+  - CodeSandbox Sandpack for live code preview
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/ishansavaliya/Wire2Web-Wireframe-to-Code-Generator.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd Wire2Web
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Set up environment variables:**  
+   Create a `.env` file in the root directory based on `.env.example`.
+
+---
+
+## Running the Project
+
+### Development Mode
+
+- Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Build the project:
 
-## Learn More
+  ```bash
+  npm run build
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+- Start the production server:
+  ```bash
+  npm run start
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Environment Variables
 
-## Deploy on Vercel
+Create a `.env` file with the following variables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```env
+# Firebase Configuration
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+NEXT_PUBLIC_FIREBASE_MESURMENT_ID=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Database Connection
+NEXT_PUBLIC_NEON_DB_CONNECTION_STRING=
+```
+
+---
+
+## Project Structure
+
+```
+Wire2Web/
+├── app/                     # Next.js app directory
+│   ├── _components/         # Shared components
+│   ├── (routes)/            # Route groups
+│   │   ├── dashboard/       # Dashboard pages
+│   │   ├── designs/         # Design management
+│   │   └── credits/         # Credits management
+│   ├── api/                 # API routes
+│   │   ├── ai-model/        # AI model endpoints
+│   │   ├── user/            # User management
+│   │   └── wireframe-to-code/ # Wireframe conversion
+│   ├── view-code/           # Code viewing pages
+│   └── page.tsx             # Homepage
+├── components/              # UI components
+│   └── ui/                  # ShadCN UI components
+├── configs/                 # Configuration files
+│   ├── db.tsx               # Database configuration
+│   ├── firebaseConfig.tsx   # Firebase configuration
+│   └── schema.ts            # Database schema
+├── context/                 # React context
+├── data/                    # Data and constants
+├── hooks/                   # Custom React hooks
+├── lib/                     # Utility functions
+└── public/                  # Static assets
+```
+
+---
+
+## Deployment
+
+The easiest way to deploy Wire2Web is using the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details on deploying Next.js applications.
+
+---
+
+![Wire2Web Screenshot](/public/Wireframetocode.png)
+
+---
