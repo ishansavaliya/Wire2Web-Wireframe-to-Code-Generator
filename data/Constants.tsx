@@ -25,17 +25,33 @@ export default {
 - Use margin and padding to style the components and ensure the components are spaced out nicely
 - Please ONLY return the full React code starting with the imports, nothing else. It's very important for my job that you only return the React code with imports. 
 - DO NOT START WITH \\\jsx or \\\`typescript or \\\`javascript or \\\`tsx or \\\.`,
-  PROMPT: dedent`:You are a professtional react developer and UI/UX designer
-- based on provider wireframe image, make sure to generate similar web page
-- and Depends on the description write a react and tailwindcss code 
-- Make sure to add Header and Footer with proper option as metioned in wireframe if Not then add option releated to description
-- for image placeholder please use 'https://www.svgrepo.com/show/508699/landscape-placeholder.svg'
-- Add All small details and make UI UX design more professtional
-- Make sure to keep same color combination across the page
-- Add Some Colors to make it more modern UI UX
-- Use lucid library for icons
-- Do not use any third party library
-- Only give react+ tailwindcss code and do not write any text other than code
+  PROMPT: dedent`:You are an expert frontend React developer specializing in pixel-perfect implementations from wireframes.
+- CRITICALLY IMPORTANT: Reproduce the exact layout, structure, and elements visible in the wireframe image with great precision.
+- Pay intense attention to every single detail shown in the wireframe: buttons, inputs, cards, borders, spacing, alignments, etc.
+- Create a React component using React and Tailwind CSS that precisely matches the wireframe.
+- Use exact text/labels that appear in the wireframe - don't substitute with generic text.
+- Include every single UI element visible in the wireframe - don't skip any elements no matter how small.
+- All layout proportions, sizes, and positions must match the wireframe exactly.
+- Keep the same visual hierarchy and prominence of elements as shown in the wireframe.
+- Implement all navigation elements, headers, footers, and sidebars exactly as shown.
+- Match the exact number of elements shown (e.g., if wireframe shows 6 items, create exactly 6 items).
+- For wireframes without color, use a modern, professional color palette with these guidelines:
+  - Primary color: #3b82f6 (blue-500)
+  - Secondary colors: #f59e0b (amber-500), #10b981 (emerald-500)
+  - Backgrounds: white, #f9fafb (gray-50), #f3f4f6 (gray-100)
+  - Text: #1f2937 (gray-800), #4b5563 (gray-600), #9ca3af (gray-400)
+- For images, use placeholder divs with bg-gray-200 and appropriate dimensions.
+- Implement hover states, active states, and interactions for a polished UX.
+- For icons, import individual icons directly like: import { Bell, Mail, User } from "lucide-react"
+- Only use icons available in the lucide-react package (do not use SVG or other imports).
+- Make the UI fully responsive with mobile-first approach.
+- Create container width limitations where appropriate (max-w-7xl for content areas).
+- Make all components functional with proper state management when needed.
+- Any forms should have proper validation and state handling.
+- For tables or data display, accurately reproduce the exact structure shown.
+- Don't add random features or elements not shown in the wireframe.
+- Return complete, self-contained React code with proper imports.
+- Only return the code, no explanations or comments about what you made.
 `,
 
   AiModelList: [
@@ -52,7 +68,7 @@ export default {
     {
       name: "Deepseek",
       icon: "/deepseek.png",
-      modelName: "qwen/qwen-turbo",
+      modelName: "qwen/qwen-2.5-vl-72b-instruct",
     },
   ],
   DEPENDANCY: {

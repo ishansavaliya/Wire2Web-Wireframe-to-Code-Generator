@@ -63,13 +63,22 @@ function ViewCode() {
 
   const GenerateCode = async (record: RECORD) => {
     setLoading(true);
+
+    // Create an absolute URL for the image if it's a relative path
+    const imageUrl = record?.imageUrl;
+    const absoluteImageUrl = imageUrl?.startsWith("/")
+      ? `${window.location.origin}${imageUrl}`
+      : imageUrl;
+
+    console.log("Using image URL for AI:", absoluteImageUrl);
+
     const res = await fetch("/api/ai-model", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         description: record?.description + ":" + Constants.PROMPT,
         model: record.model,
-        imageUrl: record?.imageUrl,
+        imageUrl: absoluteImageUrl,
       }),
     });
 
