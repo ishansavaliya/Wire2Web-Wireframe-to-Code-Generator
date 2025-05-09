@@ -127,3 +127,71 @@
 [2025-05-09T12:56:13.750Z] [AI-MODEL] Using model: google/gemini-2.0-flash-001
 [2025-05-09T12:56:15.077Z] [AI-MODEL] OpenRouter API request successful, streaming response...
 [2025-05-09T12:56:26.297Z] [AI-MODEL] Stream completed successfully
+[2025-05-09T13:03:40.097Z] [UPLOAD] Received image upload request from http://localhost:3000/api/upload-image
+[2025-05-09T13:03:40.101Z] [UPLOAD] Processing file: wireframe-example-plain.png, size: 190174, type: image/png
+[2025-05-09T13:03:40.102Z] [UPLOAD] Uploads directory ensured at: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/uploads
+[2025-05-09T13:03:40.104Z] [UPLOAD] File uploaded successfully to /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:40.105Z] [UPLOAD] Generated image URL: /uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:40.106Z] [UPLOAD] Full absolute URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:41.763Z] [AI-MODEL] Received AI model request from http://localhost:3000/api/ai-model
+[2025-05-09T13:03:41.763Z] [AI-MODEL] Request params - Model: Gemini Google, Image URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:41.764Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:41.764Z] [AI-MODEL] WARNING: Image at http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:03:41.764Z] [AI-MODEL] Using absolute image URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:41.764Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:41.764Z] [AI-MODEL] WARNING: Absolute image URL at http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:03:41.764Z] [AI-MODEL] Attempting to use base64 encoding instead of URL
+[2025-05-09T13:03:41.765Z] [AI-MODEL] Fetching remote image for base64 conversion: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:03:41.769Z] [AI-MODEL] Successfully converted remote image to base64 (image/png)
+[2025-05-09T13:03:41.769Z] [AI-MODEL] Successfully switched to base64 encoded image
+[2025-05-09T13:03:41.769Z] [AI-MODEL] Using model: google/gemini-2.0-flash-001
+[2025-05-09T13:03:43.347Z] [AI-MODEL] OpenRouter API request successful, streaming response...
+[2025-05-09T13:03:53.790Z] [AI-MODEL] Stream completed successfully
+[2025-05-09T13:04:07.325Z] [AI-MODEL] Received AI model request from http://localhost:3000/api/ai-model
+[2025-05-09T13:04:07.326Z] [AI-MODEL] Request params - Model: Gemini Google, Image URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:07.326Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:07.327Z] [AI-MODEL] WARNING: Image at http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:04:07.327Z] [AI-MODEL] Using absolute image URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:07.327Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:07.327Z] [AI-MODEL] WARNING: Absolute image URL at http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:04:07.327Z] [AI-MODEL] Attempting to use base64 encoding instead of URL
+[2025-05-09T13:04:07.328Z] [AI-MODEL] Fetching remote image for base64 conversion: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:07.347Z] [AI-MODEL] Successfully converted remote image to base64 (image/png)
+[2025-05-09T13:04:07.347Z] [AI-MODEL] Successfully switched to base64 encoded image
+[2025-05-09T13:04:07.347Z] [AI-MODEL] Using model: google/gemini-2.0-flash-001
+[2025-05-09T13:04:08.595Z] [AI-MODEL] OpenRouter API request successful, streaming response...
+[2025-05-09T13:04:18.708Z] [AI-MODEL] Stream completed successfully
+[2025-05-09T13:04:43.021Z] [AI-MODEL] Received AI model request from http://localhost:3000/api/ai-model
+[2025-05-09T13:04:43.022Z] [AI-MODEL] Request params - Model: Gemini Google, Image URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:43.022Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:43.022Z] [AI-MODEL] WARNING: Image at http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:04:43.023Z] [AI-MODEL] Using absolute image URL: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:43.023Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:43.023Z] [AI-MODEL] WARNING: Absolute image URL at http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:04:43.023Z] [AI-MODEL] Attempting to use base64 encoding instead of URL
+[2025-05-09T13:04:43.023Z] [AI-MODEL] Fetching remote image for base64 conversion: http://localhost:3000/uploads/1746795820102-wireframe-example-plain.png
+[2025-05-09T13:04:43.029Z] [AI-MODEL] Successfully converted remote image to base64 (image/png)
+[2025-05-09T13:04:43.029Z] [AI-MODEL] Successfully switched to base64 encoded image
+[2025-05-09T13:04:43.029Z] [AI-MODEL] Using model: google/gemini-2.0-flash-001
+[2025-05-09T13:04:44.474Z] [AI-MODEL] OpenRouter API request successful, streaming response...
+[2025-05-09T13:04:52.976Z] [AI-MODEL] Stream completed successfully
+[2025-05-09T13:11:40.247Z] [UPLOAD] Received image upload request from http://localhost:3000/api/upload-image
+[2025-05-09T13:11:40.251Z] [UPLOAD] Processing file: wireframe-example-plain.png, size: 190174, type: image/png
+[2025-05-09T13:11:40.251Z] [UPLOAD] Uploads directory ensured at: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/uploads
+[2025-05-09T13:11:40.252Z] [UPLOAD] File uploaded successfully to /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:40.252Z] [UPLOAD] Generated image URL: /uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:40.252Z] [UPLOAD] Full absolute URL: http://localhost:3000/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:43.698Z] [AI-MODEL] Received AI model request from http://localhost:3000/api/ai-model
+[2025-05-09T13:11:43.699Z] [AI-MODEL] Request params - Model: Deepseek, Image URL: http://localhost:3000/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:43.699Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:43.699Z] [AI-MODEL] WARNING: Image at http://localhost:3000/uploads/1746796300251-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:11:43.700Z] [AI-MODEL] Using absolute image URL: http://localhost:3000/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:43.700Z] [AI-MODEL] Checking if local file exists: /Users/ishansavaliya/Documents/Learning/Code/pending project/Wire2Web/public/http:/localhost:3000/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:43.700Z] [AI-MODEL] WARNING: Absolute image URL at http://localhost:3000/uploads/1746796300251-wireframe-example-plain.png is not accessible!
+[2025-05-09T13:11:43.700Z] [AI-MODEL] Attempting to use base64 encoding instead of URL
+[2025-05-09T13:11:43.700Z] [AI-MODEL] Fetching remote image for base64 conversion: http://localhost:3000/uploads/1746796300251-wireframe-example-plain.png
+[2025-05-09T13:11:43.706Z] [AI-MODEL] Successfully converted remote image to base64 (image/png)
+[2025-05-09T13:11:43.706Z] [AI-MODEL] Successfully switched to base64 encoded image
+[2025-05-09T13:11:43.706Z] [AI-MODEL] Using model: qwen/qwen-2.5-vl-72b-instruct
+[2025-05-09T13:11:45.241Z] [AI-MODEL] OpenRouter API request successful, streaming response...
+[2025-05-09T13:12:40.823Z] [AI-MODEL] Error during streaming: TypeError [ERR_INVALID_STATE]: Invalid state: Controller is already closed

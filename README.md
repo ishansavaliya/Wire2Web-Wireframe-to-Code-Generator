@@ -200,6 +200,26 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ---
 
+## Screenshots
+
+### 1. Home Page
+
+<img width="1426" alt="Screenshot 1 - Home Page" src="1.png" />
+
+### 2. Dashboard
+
+<img width="1426" alt="Screenshot 2 - Dashboard" src="2.png" />
+
+### 3. Wireframe Upload
+
+<img width="1426" alt="Screenshot 3 - Wireframe Upload" src="3.png" />
+
+### 4. Code Generation
+
+<img width="1426" alt="Screenshot 4 - Code Generation" src="4.png" />
+
+---
+
 ![Wire2Web Screenshot](/public/Wireframetocode.png)
 
 ---
