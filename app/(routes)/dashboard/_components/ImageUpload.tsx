@@ -172,12 +172,16 @@ function ImageUpload() {
         </div>
       </div>
 
-      <div className="mt-10 flex items-center justify-center">
-        <Button onClick={OnConverToCodeButtonClick} disabled={loading}>
+      <div className="mt-32 flex items-center justify-center">
+        <Button
+          onClick={OnConverToCodeButtonClick}
+          disabled={loading}
+          className="py-6 px-8 text-lg"
+        >
           {loading ? (
-            <Loader2Icon className=" animate-spin" />
+            <Loader2Icon className="h-6 w-6 animate-spin mr-2" />
           ) : (
-            <WandSparkles />
+            <WandSparkles className="h-6 w-6 mr-2" />
           )}
           Convert to Code
         </Button>

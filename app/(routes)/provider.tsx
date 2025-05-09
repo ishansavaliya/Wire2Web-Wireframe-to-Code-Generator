@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import AppHeader from "../_components/AppHeader";
-import { AppSidebar } from "../_components/AppSidebar";
 
 function DashboardProvider({
   children,
@@ -11,13 +8,10 @@ function DashboardProvider({
   children: React.ReactNode;
 }>) {
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <main className="w-full">
-        <AppHeader />
-        <div className="p-10">{children}</div>
-      </main>
-    </SidebarProvider>
+    <div className="min-h-screen flex flex-col">
+      <AppHeader />
+      <div className="flex-1">{children}</div>
+    </div>
   );
 }
 
