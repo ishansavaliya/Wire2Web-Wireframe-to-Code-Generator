@@ -204,22 +204,57 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### 1. Home Page
 
-<img width="1426" alt="Screenshot 1 - Home Page" src="1.png" />
+<img width="1426" alt="Screenshot 1 - Home Page" src="./public/1.png" />
 
 ### 2. Dashboard
 
-<img width="1426" alt="Screenshot 2 - Dashboard" src="2.png" />
+<img width="1426" alt="Screenshot 2 - Dashboard" src="./public/2.png" />
 
 ### 3. Wireframe Upload
 
-<img width="1426" alt="Screenshot 3 - Wireframe Upload" src="3.png" />
+<img width="1426" alt="Screenshot 3 - Wireframe Upload" src="./public/3.png" />
 
 ### 4. Code Generation
 
-<img width="1426" alt="Screenshot 4 - Code Generation" src="4.png" />
+<img width="1426" alt="Screenshot 4 - Code Generation" src="./public/4.png" />
 
 ---
 
-![Wire2Web Screenshot](/public/Wireframetocode.png)
+## Contribution
+
+### How to Contribute
+
+We welcome contributions from the community! Here's how you can help:
+
+1. **Fork the repository** and create your feature branch
+
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+
+2. **Commit your changes**
+
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+
+3. **Push to the branch**
+
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+4. **Open a Pull Request**
+
+### Development Guidelines
+
+- Follow the existing code style and architecture
+- Write tests for new features when applicable
+- Update documentation with any changes
+- Ensure your code passes linting checks
+
+### Bug Reports and Feature Requests
+
+Please use the GitHub Issues tracker to report bugs or suggest features.
 
 ---
