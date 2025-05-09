@@ -13,19 +13,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-// Firebase storage imports removed
 import axios from "axios";
-// import { uuid } from 'drizzle-orm/pg-core'; // Removed unused import
-import { useAuthContext } from "@/app/provider";
 import { useRouter } from "next/navigation";
 import Constants from "@/data/Constants";
 import { toast } from "sonner";
+
 function ImageUpload() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [file, setFile] = useState<any>();
   const [model, setModel] = useState<string>();
   const [description, setDescription] = useState<string>();
-  const { user } = useAuthContext();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
@@ -77,22 +74,23 @@ function ImageUpload() {
 
     const uid = uuid4();
     console.log(uid);
-    // Save Info To Database
-    const result = await axios.post("/api/wireframe-to-code", {
-      uid: uid,
-      description: description,
-      imageUrl: imageUrl,
-      model: model,
-      email: user?.email,
-    });
-    if (result.data?.error) {
-      console.log("Not Enough credits");
-      toast("Not Enough Credits!");
+    // Save Info To Database without requiring user authentication
+    try {
+      const result = await axios.post("/api/wireframe-to-code", {
+        uid: uid,
+        description: description,
+        imageUrl: imageUrl,
+        model: model,
+        email: "guest@example.com", // Default guest email
+      });
+
       setLoading(false);
-      return;
+      router.push("/view-code/" + uid);
+    } catch (error) {
+      console.error("Error during code generation:", error);
+      toast("Failed to generate code. Please try again.");
+      setLoading(false);
     }
-    setLoading(false);
-    router.push("/view-code/" + uid);
   };
 
   return (
