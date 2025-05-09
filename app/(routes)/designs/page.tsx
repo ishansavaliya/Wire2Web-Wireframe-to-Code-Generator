@@ -21,14 +21,22 @@ function Designs() {
   };
 
   return (
-    <div>
+    <div className="xl:px-20 mt-5">
       <h2 className="font-bold text-2xl">Wireframes & Designs</h2>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-7 mt-10">
-        {wireframeList?.map((item: RECORD, index) => (
-          <DesignCard key={index} item={item} />
-        ))}
-      </div>
+      {wireframeList.length > 0 ? (
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-7 mt-10">
+          {wireframeList.map((item: RECORD, index) => (
+            <DesignCard key={index} item={item} />
+          ))}
+        </div>
+      ) : (
+        <div className="mt-10 p-6 border rounded-lg bg-gray-50 text-center">
+          <p className="text-gray-500 font-medium text-lg">
+            No designs available
+          </p>
+        </div>
+      )}
     </div>
   );
 }
